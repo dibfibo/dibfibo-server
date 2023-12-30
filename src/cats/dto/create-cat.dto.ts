@@ -3,13 +3,15 @@ import { Cat } from "../interfaces/cat/cat.interface";
 
 export class CreateCatDto {
     
-    @IsString()
-    readonly name: Cat['name'];
+  @IsInt()
+  readonly id: Cat['id'];
 
-    @IsInt()
-    readonly age: Cat['age'];
+  @IsString()
+  readonly name: Cat['name'];
 
-    @IsString()
-    readonly breed: Cat['breed']
-    
+  @IsInt()
+  readonly age: Cat['age'];
+
+  @IsString()
+  readonly breed: Cat['breed'];
 }
